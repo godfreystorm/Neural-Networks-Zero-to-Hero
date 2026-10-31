@@ -21,3 +21,15 @@ uv sync
 ```
 
 Open any `.ipynb` in Cursor/VS Code and pick the `.venv` kernel.
+
+## Each session
+
+1. Open the lecture's notebook and type along with the video.
+2. Fill in that lecture's `NOTES.md`.
+3. Commit and push, even if the lecture isn't finished:
+
+```bash
+git add -A && git commit -m "micrograd: backward pass working" && git push
+```
+
+After a lecture: rebuild its core piece in `from_memory.py` without the video, then update the status in the table above.
