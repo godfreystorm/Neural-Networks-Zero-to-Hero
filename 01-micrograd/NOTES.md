@@ -53,6 +53,14 @@ class Value:
         return out
 ```
 
+- **Reading `dL/da`:** "how much does **L** (top) change when I nudge **a** (bottom)?" Top = the thing I'm watching, bottom = the thing I nudge. It's notation, not a division I have to do.
+- **Derivative by hand:** `(f(x+h) − f(x)) / h`. Put `h` on the input (`(a+h)*b`, not `a*b + h`), and it's a **minus**.
+  - `e = a*b` → `de/da = ((a+h)*b − a*b)/h = hb/h = b`
+- **Chain rule:** `dL/da = dL/de × de/da`. Multiply the slopes along the path. Memory trick: the `de`s "cancel" like fractions.
+  - `-2 × -3 = 6` = `a.grad`
+- **Jupyter gotcha:** a `+=` cell changes values every time it runs. Deleting a cell doesn't undo what it already did. When numbers look off: Restart → Run All.
+
 ## What I changed (my own experiment)
 
-- 
+- Added `c` to `a + b` to test `other`: Python does `(a + b) + c`, two at a time.
+- Tried `a + 1`: fails because an `int` has no `.data`. 
