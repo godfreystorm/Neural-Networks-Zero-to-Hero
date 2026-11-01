@@ -1,6 +1,6 @@
 # The spelled-out intro to neural networks and backpropagation: building micrograd
 
-**Status:** in progress (stopped at: ____ in the video)
+**Status:** in progress (stopped at: 53:02 in the video, right before the neuron example)
 **Rebuild from memory:** Value class (autograd engine) → `from_memory.py`
 
 ## What I built
